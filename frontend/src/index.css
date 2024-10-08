@@ -1,0 +1,138 @@
+/* File: src/index.css */
+
+/* Reset CSS per rimuovere margini e padding predefiniti */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stile per il body */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Stile globale per i link */
+a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Header principale dell'app */
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* Contenitore principale */
+main {
+  padding: 20px;
+}
+
+/* Stile per i pulsanti */
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Stile per i moduli */
+form {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+/* Contenitori di base per diverse sezioni */
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile per le liste degli artisti e richieste */
+ul {
+  list-style-type: none;
+}
+
+li {
+  background-color: #e9ecef;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Stile per il calendario */
+.calendar-container {
+  margin-top: 30px;
+}
+
+.fc {
+  font-family: 'Roboto', sans-serif;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.25rem;
+}
+
+.fc-daygrid-day {
+  cursor: pointer;
+}
+
+.fc-daygrid-day:hover {
+  background-color: #e2e6ea;
+}
+
+/* Media Queries per Responsività */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.2rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+  }
+
+  input[type="text"],
+  textarea,
+  select {
+    font-size: 1rem;
+  }
+}
