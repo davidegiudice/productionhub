@@ -18,7 +18,7 @@ function AddEvent() {
     };
 
     try {
-      const response = await api.post('/eventi', nuovoEvento);
+      const response = await api.post('api/eventi', nuovoEvento);
       console.log('Evento aggiunto con successo:', response.data);
       setTitolo('');
       setDescrizione('');
